@@ -1,0 +1,16 @@
+﻿<Page x:Class="WPFTest.xinputPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFTest"
+      mc:Ignorable="d"
+      Title="xinputPage" Background="Green" Height="501.9" Width="547.657" Loaded="Page_Loaded">
+
+    <Grid>
+        <Label x:Name="buttonPressLbl" Content="Start pressing Xbox buttons" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="49" Width="528" FontSize="20" Foreground="White"/>
+        <Label x:Name="nextButtonLbl" Content="Next button" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Height="49" Width="528" FontSize="20" Foreground="White"/>
+        <local:GameTimer x:Name="timerControl"  HorizontalAlignment="Left" Height="310" Margin="70,160,0,0" VerticalAlignment="Top" Width="347"/>
+
+    </Grid>
+</Page>

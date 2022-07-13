@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPFTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="636.98" Width="937.6" WindowStyle="ToolWindow" Topmost="True" ResizeMode="NoResize">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="587" Margin="10,10,0,0" VerticalAlignment="Top" Width="911">
+            <TabItem Header="Keyboard" >
+                <Frame Grid.RowSpan="2" Source="keyboardPage.xaml" />
+            </TabItem>
+            <TabItem Header="Xinput" >
+                <Frame Source="xinputPage.xaml"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

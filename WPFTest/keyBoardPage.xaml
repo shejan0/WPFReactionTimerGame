@@ -1,0 +1,17 @@
+﻿<Page x:Class="WPFTest.keyBoardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFTest"
+      mc:Ignorable="d"
+      Title="keyBoardPage" Loaded="Page_Loaded" Height="440.4" Width="402" Background="Aqua">
+
+    <Grid >
+        <Label x:Name="keyPressLbl" Margin="10,10,9.6,390"  Visibility="Visible" Foreground="Black" Content="Start pressing keyboard keys" FontSize="20">
+        </Label>
+        <Label x:Name="nextKeyLbl" Content="Label" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Width="280" FontSize="20"/>
+        <local:GameTimer x:Name="timerControl"  HorizontalAlignment="Left" Height="298" Margin="10,107,0,0" VerticalAlignment="Top" Width="338"/>
+
+    </Grid>
+</Page>
